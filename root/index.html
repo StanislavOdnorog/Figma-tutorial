@@ -17,6 +17,28 @@
 
 <body>
 
+    <img src="https://clipart-library.com/new_gallery/3-33821_emoticon-logo-png-smiley-face-emoji.png" alt="smile-image"
+        class="escape-box" id="escape-box">
+    </img>
+
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        var x, y, cur_x, cur_y;
+        const box = document.getElementById("escape-box");
+
+        box.addEventListener('mouseover', function handleMouseOver(event) {
+            x = getRandomInt(100);
+            y = getRandomInt(100);
+
+            box.style.top = y + '%';
+            box.style.left = x + '%';
+
+        });
+    </script>
+
     <section class="hw-container">
         <div class="hw hw-1">
             <div class="switch">
