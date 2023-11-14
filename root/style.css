@@ -1,7 +1,7 @@
 * {
     margin: 15px 5px;
     
-    z-index: 1;
+    z-index: 2;
 }
 
 .escape-box {
@@ -11,7 +11,7 @@
     height: 100px;
     width: 100px;
     
-    z-index: 7;
+    z-index: 1;
 }
 
 .hw-container {
