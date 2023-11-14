@@ -13,6 +13,7 @@
 }
 
 .hw-container {
+    z-index: 1;
     padding: 10px 0px;
     overflow: hidden;
     justify-content: center;
@@ -29,6 +30,7 @@
 }
 
 .hw {
+    z-index: 1;
     display: flex;
 
     margin: auto;
