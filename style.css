@@ -406,7 +406,7 @@
 /* HOMEWORK 3.2 --- Essential UI */
 
 .hw-3-2 {
-    width: 24%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
