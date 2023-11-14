@@ -1,0 +1,491 @@
+* {
+    margin: 15px 5px;
+    z-index: 1;
+}
+
+.escape-box {
+    z-index:3;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+.hw-container {  
+    padding: 10px 0px;
+    overflow: hidden;
+    justify-content: center;
+
+    border: 1px solid rgba(58, 56, 14, 0.336);
+    border-radius: 15px;
+
+    background-color: rgba(0, 225, 255, 0.063);
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+    display: flex;
+    gap: 30px;
+
+}
+
+.hw {
+    
+    display: flex;
+
+    margin: auto;
+    overflow: hidden;
+
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 15px;
+    background-color: white;
+}
+
+/* HOMEWORK 1 --- Toggle Buttons */
+
+.hw-1 {
+    width: 25%;
+    height: 20%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    background-color: rgba(55, 72, 202, 0.127);
+
+}
+
+.hidden {
+    display: none
+}
+
+.switch__label {
+    
+    width: 200px;
+    padding: 10px; 
+
+    background: url(public/images/switch-body-night.svg) top center no-repeat;
+
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.switch__toggle {
+    
+    margin: auto;
+    display: inline-block;
+
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+    background: url(public/images/switch.svg) top center no-repeat;
+}
+
+.switch__rb:checked + .switch__label{
+    background: url(public/images/switch-body-day.svg) no-repeat; 
+    text-align: right;
+}
+
+/* HOMEWORK 2 --- Notifications */
+
+.hw-2 {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: rgba(124, 13, 198, 0.162);
+    font-family: "Baloo Da 2", sans-serif;
+}
+
+.pop-up {
+    
+    display: flex;
+    width: 430px;
+    height: 146px;
+}
+
+.pop-up__img {
+    
+    width: 134px;
+    height: 120px;
+    box-sizing:content-box;
+    background: url(/public/images/frame-1196.png) no-repeat;
+}
+
+.pop-up__container {
+    
+    padding-bottom: 0px;
+    position: relative;
+    left: -22px;
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    height: 118px;
+
+    padding-right: 8.65px;
+
+
+    background: url(/public/images/vector.svg);
+}
+
+.pop-up__msg {
+    
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 36.59px;
+
+}
+
+.pop-up__close-btn {
+    
+    margin: 0px;
+    position: relative;
+    top: 8.65px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    align-self: flex-end;
+
+    background: url(/public/images/x-circle.svg);
+}
+
+.pop-up__close-btn:hover {
+    cursor: pointer;
+}
+
+.pop-up__action {
+    
+    margin-top: 4px;
+    margin-bottom: -3px;
+    margin-left: 0px;
+
+    color: #8B8D8F;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pop-up__product {
+    
+    margin: 0px;
+
+    color: #349DE0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.pop-up__info {
+    
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 36.59px;
+    padding-right: 3px;
+    margin-bottom: 0px;
+    padding-bottom: 12px;
+}
+
+.pop-up__time {
+    
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 12px;
+
+    color: #8B8D8F;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pop-up__question {
+    
+    padding: 0px;
+    margin: 0px;
+
+    color: #A7AAAD;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* HOMEWORK 3.1 --- Essential UI */
+
+.hw-3-1 {
+    padding: 70px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: rgba(0, 162, 255, 0.11);
+    font-family: "Montserrat", sans-serif;
+
+    position: relative;
+}
+
+.circle-box {
+    
+    width: 90px;
+    height: 90px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+
+    position: absolute; 
+    top: 43.5px;
+    right: 86px;
+
+    border-radius: 52px;
+    background: var(--alert-color, #E77C40);
+}
+
+.circle-box>h3 {
+    
+    color: var(--light-text-color, #FFF);
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.card-item {
+    
+    width: 245.5px;
+    height: 592.5px;
+    display: inline-flex;
+    padding: 50px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    border: 1px solid #DEDEDE;
+    background: var(--light-background-color, #FFF);
+    border-radius: 11px;
+}
+
+.card-item>h3 {
+    
+    color: var(--text-color, #252B42);
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+
+
+    margin: 0px;
+}
+
+.card-item>h5 {
+    
+    color: var(--second-text-color, #737373);
+    text-align: center;
+    font-size: 15px;
+    line-height: 23.6px; 
+    letter-spacing: 0.36px;
+
+    margin: 0px;
+}
+
+
+.card-item__price-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+.card-item__price-container>h2 {
+    
+    color: var(--primary-color, #23A6F0);
+    font-family: Montserrat;
+    font-size: 40px;
+    line-height: 57px; 
+    letter-spacing: 0.2px;
+
+    margin: 0px;
+}
+
+.card-item__price-container>h5 {
+    
+    color: var(--disabled-element-color, #8EC2F2);
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+
+    margin: 0px;
+}
+
+.card-item__buy-btn {
+    
+    background: var(--primary-color, #23A6F0);
+    display: flex;
+    width: 246.4px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.card-item__buy-btn:hover {
+    background: var(--primary-color, #45bbff);
+    cursor: pointer;
+}
+
+.card-item__buy-btn>span {    
+    color: var(--light-text-color, #FFF);
+    text-align: center;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 27px; 
+    letter-spacing: 0.2px;
+}
+
+.card-item__features-list {    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-item__features-list_item {    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 0px;
+}
+
+.card-item__features-list_item>img {    
+    display: flex;
+    width: 33px;
+    height: 32px;
+    padding: 10px 8px 11px 8px;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 200px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-item__features-list_item>h6 {    
+    width: 206px;
+    height: 23px;
+    color: var(--text-color, #252B42);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; 
+    letter-spacing: 0.3px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.two-lines {   
+    height: 25px;
+}
+
+/* HOMEWORK 3.2 --- Essential UI */
+
+.hw-3-2 {
+    width: 24%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: rgba(152, 164, 164, 0.11);
+    font-family: "Montserrat", sans-serif;
+}
+
+.bg-cover {    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 331px;
+    height: 452px;
+    
+    border: 2px solid #DEDEDE;
+    border-radius: 5px;
+    background: url(/public/images/media-bg-cover.png), lightgray 50% / cover no-repeat;
+
+    position: relative;
+}
+
+.card-content {    
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    padding-left: 30px;
+    width: 270px;
+    height: 236px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+
+
+}
+
+.card-content>h3 {    
+    padding: 0px;
+    margin: 0px;
+
+    color: var(--light-text-color, #FFF);
+
+    text-shadow: 0px 13px 19px rgba(0, 0, 0, 0.24);
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.card-content>p {    
+    margin-left: 0px;
+
+    color: var(--light-text-color, #FFF);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+}
+.card-content__tags {    
+    position: absolute;
+    bottom: 8px;
+    left: 30px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-content__tags>a {
+
+    margin: 0px;
+    color: var(--disabled-element-color, #8EC2F2);
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+
+    text-decoration: none;
+}
