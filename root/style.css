@@ -3,8 +3,8 @@
     z-index: 1;
 }
 
-#escape-box {
-    z-index:2;
+.escape-box {
+    z-index:3;
     top: 30px;
     left: 30px;
     position: fixed;
