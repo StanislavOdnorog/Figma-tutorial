@@ -1,5 +1,6 @@
 * {
     margin: 15px 5px;
+    z-index: 1;
 }
 
 .escape-box {
