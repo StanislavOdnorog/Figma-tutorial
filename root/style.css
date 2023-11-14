@@ -8,6 +8,7 @@
     position: fixed;
     height: 100px;
     width: 100px;
+    z-index: 3;
 }
 
 .hw-container {
