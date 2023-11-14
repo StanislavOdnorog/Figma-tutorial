@@ -2,6 +2,13 @@
     margin: 15px 5px;
 }
 
+.escape-box {
+    top: 30px;
+    left: 30px;
+    position: fixed;
+    height: 100px;
+    width: 100px;
+}
 
 .hw-container {
     padding: 10px 0px;
