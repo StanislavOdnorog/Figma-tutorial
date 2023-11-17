@@ -8,157 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;700&family=Inter:wght@200;400&family=Montserrat:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;700&family=Handjet:wght@200;300;400;500;600&family=Inter:wght@200;400&family=Montserrat:wght@600;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <title>Цифровой дизайн - Однорог С.И. - ДЗ</title>
+    <link rel="stylesheet" href="./lib/escape-box/escape-box.css">
+    <title>OdnorogSI</title>
 </head>
 
 <body>
-
     <img src="https://clipart-library.com/new_gallery/3-33821_emoticon-logo-png-smiley-face-emoji.png" alt="smile-image"
         class="escape-box" id="escape-box">
     </img>
+    <script type="text/javascript" src="./lib/escape-box/escape-box.js"></script>
 
-    <script>
-        function getRandomInt(max) {
-            return Math.floor(Math.random() * max);
-        }
-
-        var x, y, cur_x, cur_y;
-        const box = document.getElementById("escape-box");
-
-        box.addEventListener('mouseover', function handleMouseOver(event) {
-            x = getRandomInt(90);
-            y = getRandomInt(90);
-
-            box.style.top = y + '%';
-            box.style.left = x + '%';
-
-        });
-    </script>
-
-    <section class="hw-container">
-        <div class="hw hw-1">
-            <div class="switch">
-                <input type="checkbox" id="switch_1" class="switch__rb hidden">
-                <label for="switch_1" class="switch__label">
-                    <div class="switch__toggle"></div>
-                </label>
-            </div>
-        </div>
-    </section>
-    <section class="hw-container">
-        <div class="hw hw-2">
-            <div class="pop-up">
-                <div class="pop-up__img">
-                </div>
-                <div class="pop-up__container">
-                    <div class="pop-up__msg">
-                        <input type="button" class="pop-up__close-btn" src="/public/images/x-circle.svg"
-                            alt="close-btn">
-                        <div class="pop-up__action">
-                            Someone from Dublin Purchased
-                        </div>
-                        <div class="pop-up__product">
-                            Smart Blog
-                        </div>
-                    </div>
-                    <div class="pop-up__info">
-                        <time class="pop-up__time">
-                            4 minutes ago
-                        </time>
-                        <div class="pop-up__question">
-                            Why don’t you get?
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="hw-container">
-        <div class="hw hw-3-1">
-            <div class="card-item">
-                <h3>
-                    FREE
-                </h3>
-                <h5>
-                    Organize across all<br>apps by hand
-                </h5>
-                <div class="card-item__price-container">
-                    <h2>
-                        19$
-                    </h2>
-                    <h5>
-                        Per Month
-                    </h5>
-                </div>
-                <button class="card-item__buy-btn">
-                    <span>
-                        Try for free
-                    </span>
-                </button>
-                <ul class="card-item__features-list">
-                    <li class="card-item__features-list_item">
-                        <img src="/public/images/icn-circle-circle-xs-secondary-color-1.svg" alt="included">
-                        <h6>
-                            Unlimited product updates
-                        </h6>
-                    </li>
-                    <li class="card-item__features-list_item">
-                        <img src="/public/images/icn-circle-circle-xs-secondary-color-1.svg" alt="included">
-                        <h6>
-                            Unlimited product updates
-                        </h6>
-                    </li>
-                    <li class="card-item__features-list_item">
-                        <img src="/public/images/icn-circle-circle-xs-secondary-color-1.svg" alt="included">
-                        <h6>
-                            Unlimited product updates
-                        </h6>
-                    </li>
-                    <li class="card-item__features-list_item">
-                        <img src="/public/images/icn-circle-circle-xs-mute.svg" alt="excluded">
-                        <h6>
-                            1GB Cloud storage
-                        </h6>
-                    </li>
-                    <li class="card-item__features-list_item two-lines">
-                        <img src="/public/images/icn-circle-circle-xs-mute.svg" alt="excluded">
-                        <h6>
-                            Email and community support
-                        </h6>
-                    </li>
-                </ul>
-            </div>
-            <div class="circle-box">
-                <h3>
-                    New
-                </h3>
-            </div>
-        </div>
-    </section>
-    <section class="hw-container">
-        <div class="hw hw-3-2">
-            <div class="bg-cover">
-                <div class="card-content">
-                    <h3>Life Tips From Top
-                        Ten Adventure
-                        Travelers</h3>
-                    <p>Slate helps you see how many
-                        more days you need to work to
-                        reach.</p>
-                    <div class="card-content__tags">
-                        <a href="https://google.com">Google</a>
-                        <a href="https://trends.google.com">Trending</a>
-                        <a href="https://blog.google">New</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <main class="main">
+        <h1>CV</h1>
+        <a href="portfolio/portfolio.html">Здесь когда-нибудь будет резюме, а пока взгляните на проекты...</a>
+    </main>
 </body>
 
 </html>

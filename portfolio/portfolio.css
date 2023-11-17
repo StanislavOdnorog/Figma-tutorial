@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Handjet", "Baloo Da", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-image: url(background.jpg) ;
+  text-align: left;
+  word-spacing: 3px;
+}
+
+/* Style for the resume container */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #bfbfbfa9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #ffffffcb;
+}
+
+/* Style for the resume title */
+h1 {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Style for the resume subheadings */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Style to clear the float */
+.clear {
+  clear: both;
+}
+
+/* Style for the resume paragraphs */
+p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #595959;
+}
+
+.back-btn {
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-family: "Handjet", "Baloo Da", sans-serif;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  gap: 20px;
+
+  background-color: #ffffffb1;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: all 0.0s step-end;
+}
+
+.project-tile:hover {
+  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+a {
+  color: #595959;
+  text-align: center;
+  font-size: 18px;
+}
