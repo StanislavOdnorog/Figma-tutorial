@@ -4,19 +4,20 @@ body {
   font-family: "Handjet", "Baloo Da", sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
-  background-image: url(background.jpg) ;
+  background-image: url(../lib/img/background.jpg);
+  background-size: cover;
   text-align: left;
   word-spacing: 3px;
 }
 
 /* Style for the resume container */
 .container {
-  width: 80%;
-  margin: auto;
+  width: 70%;
   padding: 30px;
   border: 1px solid #bfbfbfa9;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #ffffffcb;
+  margin: 30px auto;
 }
 
 /* Style for the resume title */
@@ -77,9 +78,16 @@ p {
 }
 
 .project-tile:hover {
-  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
-  transform: translateY(-5px);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    transition: 0.1s;
 }
+
+.project-tile:not(:hover){
+    transform: scale(1);
+    transition: 0.1s;
+}
+
 
 h1 {
   text-align: center;
