@@ -1,138 +1,275 @@
 body {
     margin: 0;
-}
-.homework {
     height: 100vh;
-    padding: 20px 0;
 }
 
-.resume {
-    background-color: rgb(253, 253, 253);
-}
-
-.resume__window {
-    
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    width: 1440px;
-    box-shadow: 
-        -0.7em 0 .6em rgba(0, 0, 0, 0.185), 
-        0.7em 0 .6em rgba(0, 0, 0, 0.185),
-        0 0.7em .6em rgba(0, 0, 0, 0.185),
-        0 -0.7em .6em rgba(0, 0, 0, 0.185);
-    
-    color: white;
-}
-
-.resume__header {
-    height: 45px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-
-
-.resume__logo {
-    font-weight: 600;
-}
-
-.resume__logo>span {
-    color: rgb(255,229,0);
-}
-
-.resume__nav {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding-right: 15px;
-
-}
-
-.resume__nav>a {
-    text-decoration: none;
-    color: white;
-}
-
-.resume__nav>a:hover {
-    text-decoration-line: underline;
-    text-decoration-color: rgb(255,229,0);
-    text-underline-offset: 5px;
-    text-decoration-thickness: 2px;
-}
-.resume__main {
-    width: 100%;
-    height: 420px;
-    background: rgb(23,25,27);
-    background: linear-gradient(90deg, rgba(23,25,27,1) 0%, rgba(18,19,23,1) 100%);
-    display: flex;
-    justify-content: space-between;
-}
-
-.resume__intro {
-    width: 300px;
-    height: 280px;
-    margin-left: 50px;
+/* Header styles */
+.cv__header {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    height: 56px;
 
-    font-size: larger;
+    margin: 0 120px;
+    justify-content: center;
+}
+
+.header__container {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
 
-.resume__avatar {
-    width: 350px;
-    height: 350px;
-    margin-right: 40px;
-    transform: scaleX(-1);
-    border-radius: 50%;
+.header__name {
+    color: var(--font-high-emphasis, #25282B);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 180%;
+
+    text-decoration: none;
 }
 
-.resume__greet {
-    margin: 0px;
-    padding: 0px;
-    color: rgb(255,229,0);
+.header__nav-list {
+    display: inline-flex;
+    align-items: flex-start;
+
+    padding-top: 2px;
+    gap: 48px;
 }
 
-.resume__intro_name {
-    margin: 0;
-    padding: 0px;
+.header__item {
+    text-decoration: none;
+    color: var(--font-high-emphasis, #25282B);
+
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
 }
 
-.resume__name {
-    color: rgb(255,229,0);
-    font-style: normal;
+.header__item:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
 }
 
-.resume__desc {
-    font-size: 12px;
-}
-
-.resume__buttons {
+/* Main section styles */
+.main {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    justify-content: space-between;
 
+    margin: 38px 120px 144px;
 }
 
-.resume__buttons>a {
-    font-size: 11px;
-    font-weight: 600;
+.main__about {
+    width: 590px;
+    margin-top: 105px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.main__about_title {
+    margin: 0;
+
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.main__about>p {
+    margin: 0;
+
+    align-self: stretch;
+    color: #828282;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.main__picture-container {
+    width: 524px;
+    height: 524px;
+}
+
+.main__picture {
+    border-radius: 50%;
+    background: url(./images/profile.png) -45px 35px no-repeat;
+    background-color: var(--brand-yellow, #FDC435);
+
+    width: 524px;
+    height: 524px;
+}
+
+.main__about_resume-btn {
+    display: flex;
+    padding: 8px 24px;
+    align-items: flex-start;
+
+    border-radius: 8px;
+    background: var(--brand-yellow, #FDC435);
+
+    color: #25282B;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
     text-decoration: none;
-
-    padding: 7px;
-    border-radius: 30px;
 }
 
-.resume__hire-btn {
-    color: black;
-    background-color: rgb(255,229,0);
-    border: 1.5px solid rgb(0, 0, 0);
+.main__about_resume-btn:hover {
+    background: var(--brand-yellow, rgba(193, 158, 70, 1));
 }
 
-.resume__works-btn {
+/* Projects section styles */
+
+.projects__container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.project__title {
+    text-align: center;
+
+}
+
+.projects__title_text {
+    display: inline-block;
+    margin: 0;
+
+    color: var(--font-high-emphasis, #25282B);
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+
+    position: relative;
+    right: 11px;
+}
+
+.underline {
+    width: 55%;
+    height: 4px;
+    background-color: var(--brand-yellow, #FDC435);
+    margin: 5px auto 0;
+}
+
+.projects__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 80.5px;
+}
+
+.projects__field {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5px;
+}
+
+.projects__field>label {
+    color: var(--font-high, #25282B);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.projects__field>input,textarea {
+    height: 40px;
+
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: var(--bg-white, #FFF);
+
+}
+
+#form__message {
+    height: 160px;
+    resize: none;
+}
+
+.field__submit {
+    align-items: flex-end;
+}
+
+.field__submit_btn {
+    padding: 8px 24px;
+
+    border: none;
+    border-radius: 8px;
+    background: var(--brand-yellow, #FDC435);
+    color: var(--font-high-emphasis, #25282B);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+
+    cursor: pointer;
+}
+
+.field__submit_btn:hover {
+    background: var(--brand-yellow, rgba(193, 158, 70, 1));
+}
+
+/* Footer styles */
+.footer {
+    margin: 0;
+    padding: 0;
+    padding-top: 56px;
     color: white;
-    border: 1.5px solid white;
+    text-align: center;
+
+    padding-bottom: 241px;
+    background: url(./images/footer-vector.svg) top no-repeat;
+    background-size: cover;
+}
+
+.footer__nav_list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+
+}
+
+.nav-list__item {
+    text-decoration: none;
+    font-size: 48px;
+}
+
+.icon-linkedin-circled {
+    font-size: 51px;
+    position: relative;
+    bottom: 2px;
+}
+
+.nav-list__item>i {
+    transition: 0.1s;
+}
+
+.nav-list__item:hover {
+    transform: scale(1.1);
+}
+
+.nav-list__item:not(:hover) {
+    transform: scale(1);
+}
+
+.footer__footnote {
+    color: var(--font-medium-emphasis, #828282);
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer__backgound {
+    width: 100%;
 }
