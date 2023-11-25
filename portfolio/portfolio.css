@@ -64,25 +64,25 @@ p {
 .project-tile {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
 
   gap: 20px;
 
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.0s step-end;
 }
 
 .project-tile:hover {
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-    transform: scale(1.02);
-    transition: 0.1s;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: 0.1s;
 }
 
-.project-tile:not(:hover){
-    transform: scale(1);
-    transition: 0.1s;
+.project-tile:not(:hover) {
+  transform: scale(1);
+  transition: 0.1s;
 }
 
 

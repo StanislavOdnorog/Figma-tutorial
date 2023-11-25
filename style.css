@@ -30,7 +30,7 @@ body {
     margin: 30px;
 }
 
-.header > a {
+.header>a {
     text-decoration: none;
     color: #000;
     padding: 1px;
@@ -45,12 +45,12 @@ body {
     transition: transform 0.1s;
 }
 
-.header > a:hover {
+.header>a:hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }
 
-.header > a:not(:hover) {
+.header>a:not(:hover) {
     transform: scale(1);
 }
 
@@ -62,7 +62,7 @@ body {
     border-style: solid;
     border-radius: 50%;
 
-    border-color: rgba(102, 194, 230, 0.025);  
+    border-color: rgba(102, 194, 230, 0.025);
     box-shadow: 0px 5px 5px 0px rgba(148, 147, 147, 0.2);
 
     content: url("./lib/img/clown.gif");
@@ -77,10 +77,10 @@ body {
     transform: scale(1.1);
 
     content: url("./lib/img/clown.gif");
-   
+
 }
 
-.avatar:not(:hover){
+.avatar:not(:hover) {
     transform: scale(1);
     content: url("./lib/img/avatar.png");
 }

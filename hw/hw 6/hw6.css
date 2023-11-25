@@ -182,7 +182,8 @@ body {
     font-weight: 600;
 }
 
-.projects__field>input,textarea {
+.projects__field>input,
+textarea {
     height: 40px;
 
     border-radius: 8px;
