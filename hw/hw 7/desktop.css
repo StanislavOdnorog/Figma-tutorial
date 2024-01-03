@@ -174,7 +174,7 @@
 
 .services__services-list {
     gap: 48px;
-    margin: auto;
+    justify-content: center;
 
 }
 
