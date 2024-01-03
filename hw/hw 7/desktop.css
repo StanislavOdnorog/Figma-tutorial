@@ -1,3 +1,14 @@
+html {
+    display: block;
+
+
+}
+body {
+    display: block;
+ 
+}
+
+
 .desktop-hidden {
     display: none !important;
 }
@@ -121,8 +132,8 @@
 .features__block-left_secondary-image{
     position: absolute;
 
-    left: 5vw;
-    top: 20vh;
+    left: 28.8vw;
+    top: 18vh;
 
     height: 362px;
     width: 363px;

@@ -19,9 +19,24 @@
     font-weight: 700;
 }
 
+html {
+    display: flex;
+    flex-direction: column;
+
+    overflow:auto;
+    margin: auto;
+    padding: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+}
 
 * {
     margin: 0;
+    padding: 0;
     background-color: white;
     font-family: var(--text-family);
     color: var(--text-color);
@@ -61,8 +76,6 @@ li {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: -1.44px;
-
-    padding-right: 138px;
 }
 
 .header__menu-list {
@@ -87,12 +100,10 @@ li {
     display: flex;
     gap: 16px;
 
-    padding-left: 93px;
 }
 
 .menu-list__item-button {
     color: var(--purple-color);
-    padding: 16px 23px;
     background-color: var(--button-bg-color);
 
     border-radius: 4px;
@@ -195,8 +206,8 @@ li {
 
 .main__website-preview {
     margin: auto;
-    height: 241.288px;
-    width: 338px;
+    height: 62vw;
+    width: 80vw;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,11 +229,14 @@ li {
 .main__footer_companies-list {
     display: flex;
     flex-direction: row;
-    margin: auto;
     vertical-align: middle;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80vw;
 
-    gap: 32px;
     margin-bottom: 57.12px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main__footer_list-item {
@@ -294,8 +308,8 @@ li {
 
 .features__block-left_main-image{
     position: relative;
-    width: 227px;
-    height: 269px;
+    width: 50vw;
+    height: 60vw;
     z-index: 0;
 
     background-image: url(./images/previews/timeline-preview.svg);
@@ -307,9 +321,9 @@ li {
     position: absolute;
     z-index: 1;
 
-    width: 210px;
-    height: 210px;
-    top: 13%;
+    width: 35vw;
+    height: 35vw;
+    top: 30vw;
     left: 48%;
 
     background-image: url(./images/previews/message-preview.svg);
@@ -320,7 +334,7 @@ li {
     background-color: var(--secondary-bg-color);
     padding-bottom: 32px;
     text-align: center;
-    margin: auto;
+    margin: 0;
 }
 
 
@@ -337,7 +351,6 @@ li {
 
     padding: 26px 32px;
 
-    width: 308px;
 
     border-bottom: 1px solid var(--secondary-border-color);
 
@@ -429,7 +442,7 @@ li {
     border-radius: 4px;
     border: none;
 
-    width: 322px;
+    width: 100vw;
     align-self: center;
 }
 
@@ -473,7 +486,7 @@ li {
 
 .statistics__stats-preview {
     background: inherit;
-    width: 336px;
+    width: 100vw;
     height: 208px;
     background-image: url(./images/previews/stats-preview.svg);
     background-size: contain;
@@ -506,7 +519,7 @@ li {
 .statistics__text {
     font-size: 16px;
     line-height: 24px;
-    width: 322px;
+    width: 100vw;
     align-self: center;
 }
 
@@ -519,7 +532,7 @@ li {
     color: white;
     padding: 18px 0px;
 
-    width: 322px;
+    width: 100vw;
     background-color: var(--purple-color);
 
     border-radius: 4px;
@@ -548,7 +561,7 @@ li {
     font-size: 18px;
     line-height: 32px;
 
-    width: 336px;
+    width: 100vw;
     align-self: center;
 }
 
@@ -632,6 +645,7 @@ li {
     height: 53.352px;
 
     border-radius: 10px;
+    background-repeat: no-repeat;
 }
 
 .buttons_google-play {
@@ -675,6 +689,7 @@ li {
     border: none;
     width: 15.9px;
     height: 8px;
+    background-repeat: no-repeat;
     background: url(./images/icons/arrow.svg) bottom center;
     cursor: pointer;
 }
@@ -696,6 +711,7 @@ li {
     width: 176px;
     height: 52.334px;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .google-play-btn {
