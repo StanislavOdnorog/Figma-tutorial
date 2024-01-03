@@ -195,8 +195,8 @@ li {
 
 .main__website-preview {
     margin: auto;
-    height: 273.288px;
-    width: 376px;
+    height: 241.288px;
+    width: 338px;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -310,7 +310,7 @@ li {
     width: 210px;
     height: 210px;
     top: 13%;
-    left: 46%;
+    left: 48%;
 
     background-image: url(./images/previews/message-preview.svg);
     background-size: cover;
@@ -473,8 +473,8 @@ li {
 
 .statistics__stats-preview {
     background: inherit;
-    width: 384px;
-    height: 260px;
+    width: 336px;
+    height: 208px;
     background-image: url(./images/previews/stats-preview.svg);
     background-size: contain;
     background-repeat: no-repeat;

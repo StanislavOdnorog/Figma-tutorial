@@ -62,8 +62,8 @@
 }
 
 .main__website-preview {
-    width: 62.6vw;
-    height: 654.287px;
+    width: 1000px;
+    height: 765.289px;
 
 }
 
@@ -121,7 +121,7 @@
 .features__block-left_secondary-image{
     position: absolute;
 
-    left: 31vw;
+    left: 5vw;
     top: 20vh;
 
     height: 362px;
