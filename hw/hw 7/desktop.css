@@ -1,0 +1,395 @@
+.desktop-hidden {
+    display: none !important;
+}
+
+.mobile-hidden {
+    display: unset !important;
+}
+
+.container {
+    padding-left: 165px;
+    padding-right: 166px;
+}
+
+.header__menu-list {
+    padding-top: 48px;
+    padding-bottom: 100px;
+}
+
+.main__discount_percent {
+    position: relative;
+    left: 16px;
+}
+
+.main__discount_price {
+    font-size: 16px;
+    line-height: 24px;
+
+    padding: 8px 16px 8px 40px;
+    position: relative;
+    right: 16px;
+}
+
+.main {
+    gap: 24px;
+}
+
+.main__email-input {
+    gap: 0;
+}
+
+.main__title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72px;
+}
+
+.main__email-input_input {
+    padding: 18px 24px;
+    min-width: 265px;
+    border-radius: 4px 0px 0px 4px;
+
+    position: relative;
+    left: 2.3px;
+}
+
+.main__email-input_button {
+    padding: 18px 45px;
+    border-radius: 0px 4px 4px 0px;
+
+    position: relative;
+    right: 2.3px;
+}
+
+.main__website-preview {
+    width: 62.6vw;
+    height: 654.287px;
+
+}
+
+.main__footer {
+    gap: 24px;
+}
+
+.main__footer_promo {
+    font-size: 16px;
+}
+
+.main__footer_companies-list {
+    gap: 136px;
+    margin-bottom: 100.89px;
+}
+
+.main__footer_list-item {
+    width: 80px;
+}
+
+.google-logo {
+    height: 26.112px;
+}
+
+.airbnb-logo {
+    height: 24.96px;
+}
+
+.facebook-logo {
+    width: 77.171px;
+    height: 15.824px;
+}
+
+.hubspot-logo {
+    height: 23.296px;
+}
+
+.features {
+    padding-top: 61px;
+    flex-direction: row;
+
+    gap: 343px;
+}
+
+.features__block-left_main-image{
+    position: relative;
+
+    height: 467px;
+    width: 394px;
+
+    bottom: 8vh;
+    left: 0vh;
+}
+
+.features__block-left_secondary-image{
+    position: absolute;
+
+    left: 31vw;
+    top: 20vh;
+
+    height: 362px;
+    width: 363px;
+}
+
+.features__block-right {
+    text-align: left;
+    padding-bottom: 112px;
+}
+
+.features__features-list .features__features-item:last-child {
+    border-bottom: none;
+}
+
+.features__features-item {
+    border-left: 8px solid var(--secondary-bg-color);
+}
+
+.features__features-item:hover {
+    background-color: var(--button-bg-color);
+    border-radius: 0 8px 8px 0;
+    border-left: 8px solid var(--purple-color);
+    border-bottom: none;
+}
+
+
+.features__features-list>li>h2 {
+    background-color: inherit;
+
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.features__features-list>li>p {
+    background-color: inherit;
+
+    color: #4E5A65;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.services__title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.services__services-list {
+    gap: 48px;
+    margin: auto;
+
+}
+
+.services__services-item {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 30%;
+}
+
+.statistics {
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding-top: 132px;
+    padding-bottom: 15px;
+
+    gap: 90px;
+}
+
+.statistics__block-left {
+    width: 413px;
+
+    text-align: left;
+    gap: 24px;
+}
+
+.statistics__stats-preview {
+    position: relative;
+
+    width: 600px;
+    height: 400px;
+
+    top: -50px;
+}
+
+.statistics__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.statistics__text {
+    width: 413px;
+    align-self: flex-start;
+}
+
+.statistics__get-btn {
+    padding: 18px 0px;
+    width: 164px;
+
+    align-self: flex-start;
+    text-align: center;
+}
+
+.reviews {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 48px;
+}
+
+.reviews__text {
+    width: 543px;
+}
+
+.reviews__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.reviews__commentors-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.reviews__commentors-list_item {
+    display: flex !important;
+    flex-direction: row;
+    vertical-align: middle;
+
+    gap: 16px;
+
+    padding-top: 24px;
+    border-top: 4px solid transparent;
+}
+
+.reviews__commentors-list_item:hover {
+    border-top: 4px solid #35414B;
+    cursor: pointer;
+}
+
+.reviews__commentors-list_description {
+    text-align: left;
+}
+
+.reviews__commentors-list_author {
+    font-size: 16px;
+}
+
+.reviews__commentors-list_position {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.mobile-download {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 64px 80px;
+    margin: auto 165px;
+    border-radius: 16px;
+    text-align: left;
+
+
+    margin-bottom: 100px;
+}
+
+.mobile-download__text {
+    width: 423px;
+
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.mobile-download__buttons {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer {
+    padding-top: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.footer__nav-sections_list {
+    display: flex;
+    flex-direction: row;
+    gap: 17vw;
+}
+
+.footer__section-list {
+    gap: 20px;
+}
+
+.footer__section-list_items-list {
+    display: flex !important;
+    gap: 20px;
+}
+
+.footer__section-list_items-list * {
+    font-weight: 400;
+    font-feature-settings: 'salt' on, 'liga' off;
+}
+
+.download-mobile-link {
+    width: 162px;
+    height: 48px;
+}
+
+.footer__footnote {
+    padding-left: 175px;
+    padding-right: 175px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+    justify-content: space-between;
+}
+
+.footer__footnote_nav-bar {
+    display: flex !important;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.footer_footnote_nav-bar_item {
+    display: flex;
+    border-radius: 50%;
+    background-color: rgb(56, 58, 61);
+    padding: 6px;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_footnote_nav-bar_icon {
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.instagram-icon {
+    background-image: url(./images/icons/instagram.svg);
+}
+
+.behance-icon {
+    background-image: url(./images/icons/behance.svg);
+}
+
+.twitter-icon {
+    background-image: url(./images/icons/twitter.svg);
+
+    height: 14px;
+}
+
+.youtube-icon {
+    background-image: url(./images/icons/youtube.svg);
+
+    height: 12px;
+}
+
