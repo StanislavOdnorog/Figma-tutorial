@@ -1,42 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="../../lib/escape-box/escape-box.css">
     <link rel="stylesheet" href="hw6.css">
+    <link rel="stylesheet" href="./font/css/fontello.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;600&family=Playfair+Display:wght@700&family=Raleway:wght@500&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="../../lib/img/icon.png" type="image/icon type">
     <title>Homework 6</title>
 </head>
+
 <body>
-    <section class="homework hw_6 resume">
-        <div class="resume__window">
-            <header class="resume__header">
-                <div class="resume__logo">
-                    <span>S</span>D
-                </div>
-                <div class="resume__nav">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Service</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Contact Us</a>
-                </div>
-            </header>
-            <main class="resume__main">
-                <div class="resume__intro">
-                    <div class="resume__greet">Hello</div>
-                    <h1 class="resume__intro_name">I'm <cite class="resume__name">Saidos Hits</cite></h1>
-                    <div class="resume__desc">I'm A Freelancer And Web Developer <br> With 5 Years of Experience</div>
-                    <div class="resume__buttons">
-                        <a class="resume__hire-btn" href="#">Hire Me</a>
-                        <a class="resume__works-btn" href="#">My Works</a>
-                    </div>
+    <header class="cv__header">
+        <div class="header__container">
+            <a href="../../index.html" class="header__name">
+                Stanislav Odnorog
+            </a>
+            <nav class="header__nav-list">
+                <a class="header__item" href="../../index.html">About</a>
+                <a class="header__item" href="../../portfolio/portfolio.html">Projects</a>
+                <a class="header__item" href="#nav__list">Contacts</a>
+            </nav>
+        </div>
+    </header>
 
+    <main class="main">
+
+        <img src="https://clipart-library.com/new_gallery/3-33821_emoticon-logo-png-smiley-face-emoji.png"
+            alt="smile-image" class="escape-box" id="escape-box">
+        </img>
+        <script type="text/javascript" src="../../lib/escape-box/escape-box.js"></script>
+
+        <div class="main__about">
+            <h1 class="main__about_title">About me</h1>
+            <p>
+                Specs: Unix, Bash, Git, VIM, Lua, Algorithms, SQL, Manual Tests, Functional Tests, Python, Django, Flask,
+                REST, API, C, C++, C#, HTML, CSS, JavaScript, Figma, DevOps, English, Italian, Obsidian, Trello, Notion,
+                JIRA, Team-Building, Managment, etc...
+            </p>
+            <a class="main__about_resume-btn" href="../../index.html">Resume</a>
+        </div>
+        <div class="main__picture-container">
+            <div class="main__picture"></div>
+        </div>
+    </main>
+
+    <section class="projects">
+        <div class="projects__container">
+            <div class="project__title">
+                <h1 class="projects__title_text">Projects<div class="underline"></div>
+                </h1>
+            </div>
+            <form class="projects__form" action="#">
+                <div class="projects__field">
+                    <label for="projects__form_name">Name</label>
+                    <input type="text" name="projects__form_name" id="form__name">
                 </div>
-
-                <img src="https://img.freepik.com/free-photo/contemplative-caucasian-guy-looks-with-thoughtful-expression-upwards-focused-purses-lips-tries-make-decision_273609-25605.jpg" alt="" class="resume__avatar", width="350">
-
-            </main>
+                <div class="projects__field">
+                    <label for="projects__form_email">Email</label>
+                    <input type="email" name="projects__form_email" id="form__email">
+                </div>
+                <div class="projects__field">
+                    <label for="projects__form_message">Message</label>
+                    <textarea name="projects__form_message" id="form__message"></textarea>
+                </div>
+                <div class="projects__field field__submit">
+                    <button class="field__submit_btn" type="submit" name="projects__submit">Send</button>
+                </div>
+            </form>
         </div>
     </section>
+    <div class="footer">
+        <div class="footer__nav_list nav-list" id="nav__list">
+            <a href="https://t.me/YourPersonalUsername" class="nav-list__item nav__telegram"><i
+                    class="icon-telegram"></i></a>
+            <a href="https://www.linkedin.com/in/stanislav-odnorog-378936212/" class="nav-list__item nav__linkedin"><i
+                    class="icon-linkedin-circled"></i></a>
+            <a href="mailto:isodnorog@gmail.com" class="nav-list__item nav__gmail"><i class="icon-mail-circled"></i></a>
+        </div>
+        <div class="footer__footnote">
+            Stanislav Odnorog 2023
+        </div>
+    </div>
 </body>
+
 </html>
