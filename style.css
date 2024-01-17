@@ -104,9 +104,8 @@ body {
 
 section {
     max-width: 85%;
-    width: 400px;
+    width: 800px;
     min-width: 40%;
-    text-align: center;
     font-size: 25px;
     margin: auto;
     border: 1px solid #bfbfbf3c;
